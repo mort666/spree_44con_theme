@@ -3,13 +3,13 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_bootstrap_theme'
   s.version     = '0.1.0'
-  s.summary     = 'Spree theme based on twitter\'s bootstrap'
+  s.summary     = 'Spree theme based on twitter\'s bootstrap. Based on Drew Purdy original port'
   s.description = 'gem description here'
   s.required_ruby_version = '>= 1.8.7'
 
-  s.author            = 'Drew Purdy'
-  s.email             = 'andrewmp1@gmail.com'
-  #s.homepage          = 'http://www.spreecommerce.com'
+  s.author            = 'Tommaso Visconti'
+  s.email             = 'tommaso.visconti@gmail.com'
+  s.homepage          = 'http://www.tommyblue.it'
 
   #s.files         = `git ls-files`.split("\n")
   #s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   s.add_dependency 'spree_core'
-  s.add_dependency 'bootstrap-sass', '~> 2.0.1'
+  s.add_dependency 'bootstrap-sass', '~> 2.1.0.1'
 
   s.add_development_dependency 'capybara', '1.0.1'
   s.add_development_dependency 'factory_girl'

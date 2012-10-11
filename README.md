@@ -24,15 +24,15 @@ deface overrides are used add/remove div's & css classes to follow bootstrap nam
 Some quick notes on the differences in the css markup conventions:
 
 
-| spree/skeleton            | bootstrap                 |
+    | spree/skeleton            | bootstrap                 |
 
-| :-----------------------: | :-----------------------: |
+    | :-----------------------: | :-----------------------: |
 
-| grid=960/16               | grid=940/12               |
+    | grid=960/16               | grid=940/12               |
 
-| button=.button            | button=.btn               |
+    | button=.button            | button=.btn               |
 
-| flash=.flash              | flash=.alert              |
+    | flash=.flash              | flash=.alert              |
 
 
 The current version uses bootstrap 2.0 with the fluid layout. This changes the grid into a percentage instead
@@ -42,14 +42,16 @@ of pixels.
 Install
 =======
 
-gem 'spree_bootstrap_theme', :git => 'git://github.com/Andrewmp1/spree_bootstrap_theme.git'
+    gem 'spree_bootstrap_theme', :git => 'git://github.com/Andrewmp1/spree_bootstrap_theme.git'
+
 NOTE: It's important that you add this line at the bottom of the Gemfile, or at least AFTER any other
 extension/engine/gem that you'd like to theme (i.e. Spree)
 
 Make sure you remove any includes in your stylesheets to the spree core stylesheets.
 
 Add this line to a scss stylesheet in your rails app:
-@import 'store/spree_bootstrap_theme'
+
+    @import 'store/spree_bootstrap_theme'
 
 From the bootstrap-sass page.  The theme vendors bootstrap in the same way as the gem bootstrap-sass:
 
