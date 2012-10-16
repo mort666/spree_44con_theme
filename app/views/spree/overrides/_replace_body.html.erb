@@ -2,7 +2,15 @@
 <div class="container">   
 	<div class="row">
 <header id="header" class="" data-hook>     
-	<%= image_tag(Spree::Config[:logo],  :alt => "Logo", :id => "logo") %>
+	<div class="row-fluid">
+		<div class="span8">
+	<%= image_tag(Spree::Config[:logo],  :alt => "Logo", :id => "logo") %> 
+	</div>
+	<div class="span4"> 
+		<div class="pull-right">
+		<%= render 'spree/shared/nav_bar' %>
+		</div>
+		</div></div>
   <div class="navbar">
     <div class="navbar-inner">
       <div class="container-fluid">
@@ -67,7 +75,7 @@
 				</div>
 				<div class="span4">
 					<h3>Newsletter</h3>
-					<p>Subscribe to our monthly newsletter and be the first to know about our news and special deals!</p>
+					<p>Subscribe to our newsletter and be the first to know about our news and special deals!</p>
 					<form action="http://44con.us2.list-manage.com/subscribe/post" method="POST" class="in-line">
 					<input type="hidden" name="u" value="8aa1512f3599fc5f17e933b2a">
 					<input type="hidden" name="id" value="392dc4ffdd">

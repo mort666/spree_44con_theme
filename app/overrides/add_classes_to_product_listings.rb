@@ -12,8 +12,3 @@ Deface::Override.new(:virtual_path => %q{spree/shared/_products},
                      :disabled => false,
                      :attributes => {:class => 'products-list-item span2'})  
                      
-Deface::Override.new(:virtual_path => %q{spree/products/_cart_form},
-                     :name => %q{add_classes_to_cart_form},
-                     :disabled => false,
-                     :add_to_attributes => %q{form},
-                     :attributes =>{:class =>'form-inline'})
