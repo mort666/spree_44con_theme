@@ -14,4 +14,4 @@ Deface::Override.new(:virtual_path => %q{spree/checkout/_address},
                      :name => %q{add_classes_to_address_form},
                      :disabled => false,
                      :add_to_attributes => %q{form},
-                     :attributes =>{:class =>'well form-inline'})
+                     :attributes =>{:class =>'form-inline'})

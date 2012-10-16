@@ -1,11 +1,13 @@
 <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
-
-<header id="header" class="" data-hook>
+<div class="container">   
+	<div class="row">
+<header id="header" class="" data-hook>     
+	<%= image_tag(Spree::Config[:logo],  :alt => "Logo", :id => "logo") %>
   <div class="navbar">
     <div class="navbar-inner">
       <div class="container-fluid">
         <figure id="logo" data-hook>
-          <%= link_to image_tag(Spree::Config[:logo],  :alt => "Logo", :id => "logo"), root_url, :class =>'brand' %>
+          <%= link_to "44CON", root_url, :class =>'brand' %>
         </figure>
 
         <ul id="nav-bar" class="nav" data-hook>
@@ -22,11 +24,13 @@
       </div>
     </div>
   </div>
-</header>
+</header>    
+</div>
 
+<div class="row-fluid">
 <div id="wrapper" class="" data-hook>
-  <div class="container-fluid">
-    <div class="row-fluid">
+  <div class="container">
+    <div class="row">
       <% if content_for?(:sidebar) %>
         <aside id="sidebar" class="span2" data-hook>
           <%= yield :sidebar %>
@@ -40,20 +44,65 @@
       </div>
     </div>
   </div>
+</div>          
 </div>
+          
+<footer class="row" id="footer" data-hook>
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span4">
+					<h3>Contact Us</h3>
+					<dl class="dl-horizontal">
+						<dt>Address:</dt><dd>44Con c/o amlbenson, Maybrook House, 97 Godstone Road, Caterham, Surrey, CR3 6RE</dd> 
+					<dt>Email:</dt><dd>44con@44con.com</dd> 
+					</dl>
+				</div>
+				<div class="span4 social-networks">
+					<h3>Stay in touch</h3>
+					<p>Stay in touch on social networks</p>
+					<a href="http://facebook.com/people/@/44Con" title="Follow us on Facebook" class="icon-facebook"></a>
+					<a href="http://twitter.com/#!/44con" title="Follow us on Twitter" class="icon-twitter"></a>
+					<a href="https://plus.google.com/116869332782590169350/" title="Follow us on Google Plus" class="icon-google-plus"></a>
+					<a href="http://www.linkedin.com/groups/44Con-3886577" title="Follow us on Linkedin" class="icon-linkedin"></a>
+				</div>
+				<div class="span4">
+					<h3>Newsletter</h3>
+					<p>Subscribe to our monthly newsletter and be the first to know about our news and special deals!</p>
+					<form action="http://44con.us2.list-manage.com/subscribe/post" method="POST" class="in-line">
+					<input type="hidden" name="u" value="8aa1512f3599fc5f17e933b2a">
+					<input type="hidden" name="id" value="392dc4ffdd">
+						<input type="email" name="MERGE0" id="MERGE0" placeholder="Enter your E-mail" />
+						<input type="submit" class="btn" value="Ok" />
+					</form>
+				</div>
+			</div> <!-- /row -->		
+		</div> <!-- /container -->
 
-<footer id="footer" data-hook>
-  <div class="container-fluid">
-    <div id="footer-left" class="span6" data-hook>
-      <p><%= t(:powered_by) %> <%= link_to 'Spree', 'http://spreecommerce.com/' %></p>
+	<div id="footer-extra">
+		<div class="container">
+			<div class="row">
+				<div class="span4">
+					44CON. Copyright &copy; 2011-<%=Time.now.strftime('%Y')%> Sense/Net Ltd. All rights reserved.
+				</div>
+				<div class="span4">
+					<i class="icon-film"></i> &nbsp; 
+					A Sense/Net production
+				</div>
+				<div class="span4">
+					<i class="icon-envelope"></i> &nbsp; 
+					44con@44con.com
+				</div>
+			</div> <!-- end .row -->		
+		</div> <!-- end .container -->		
+	</div>
+
+
+	</footer>
+
     </div>
-    <div id="footer-right" class="span6" data-hook></div>
-  </div>
-</footer>
-
-
 </div>
-
+   
+</div>
 <%= render :partial => 'spree/shared/google_analytics' %>
 
 </body>

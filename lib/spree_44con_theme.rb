@@ -1,5 +1,5 @@
 require 'spree_core'
-require 'spree_bootstrap_theme/engine'
+require 'spree_44con_theme/engine'
 require 'bootstrap-sass'
 
 

@@ -1,7 +1,8 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
 @import "store/spree_bootstrap_mixins";
-@import "store/spree_core_stripped";
+@import "store/spree_core_stripped";    
+@import "store/spree_bootstrap_overides";
 
 
 // BOOTSTRIP
@@ -110,4 +111,6 @@ nav li{
     @extend well;
     @extend form-inline;
   }
-}
+}          
+
+

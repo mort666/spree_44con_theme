@@ -1,15 +1,15 @@
 # encoding: UTF-8
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_bootstrap_theme'
-  s.version     = '0.1.0'
+  s.name        = 'spree_44con_theme'
+  s.version     = '0.1.3'
   s.summary     = 'Spree theme based on twitter\'s bootstrap. Based on Drew Purdy original port'
-  s.description = 'gem description here'
+  s.description = 'Bootstrap Theme for 44CON Store'
   s.required_ruby_version = '>= 1.8.7'
 
-  s.author            = 'Tommaso Visconti'
-  s.email             = 'tommaso.visconti@gmail.com'
-  s.homepage          = 'http://www.tommyblue.it'
+  s.author            = 'Stephen Kapp'
+  s.email             = 'skapp@44con.com '
+  s.homepage          = 'http://44con.com'
 
   #s.files         = `git ls-files`.split("\n")
   #s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

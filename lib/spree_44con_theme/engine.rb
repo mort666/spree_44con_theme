@@ -1,6 +1,6 @@
 module SpreeBootstrapTheme
   class Engine < Rails::Engine
-    engine_name 'spree_bootstrap_theme'
+    engine_name 'spree_44con_theme'
 
     config.autoload_paths += %W(#{config.root}/lib)
 

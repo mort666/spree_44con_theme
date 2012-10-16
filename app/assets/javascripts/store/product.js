@@ -1,1 +1,0 @@
-// Placeholder to override spree core product.js that conflicts with bootstrap js files
